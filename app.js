@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 
 app.post("/post", (req, res) => {
-console.log("Connected to React");
-res.redirect("/");
+  console.log("Connected to React");
+  res.redirect("/");
 });
 
 const PORT = process.env.PORT || 8080;
