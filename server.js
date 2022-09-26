@@ -1,19 +1,20 @@
+const path = require('path');
 const express = require("express");
 const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-const ArtikelRouter = require('./backend/routes/ArtikelApi');
+app.use(express.static(path.resolve(__dirname, '../client/build')));
+
+
+const HomePageRouter = require('./backend/routes/HomePageRoute');
+app.use('/', HomePageRouter);
+
+const ArtikelRouter = require('./backend/routes/ArtikelRoute');
 app.use('/artikel', ArtikelRouter);
 
-app.post("/post", function(req, res)  {
-  const newUser = {
-    Username: req.body.username,
-  };
-
-  // console.log(newUser);
-});
+module.exports = app;
 
 const PORT = process.env.PORT || 8080;
 
