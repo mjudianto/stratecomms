@@ -1,21 +1,11 @@
-module.exports = function (app) {
-
-  app.post("/", (req, res) => {
-    res.json({ message: "Hello from server!" });
-  });
-
-}
-
-// var router = require('express').Router();
-
-// const path = require("path");
+var router = require('express').Router();
 
 // router.get('/artikel', function(req,res){
 //   res.render('./components/Artikel.js');
 // });
 
-// router.post('/artikel',function(req,res, next){
-//   res.redirect('/');
-// });
+router.post('/post',function(req,res, next){
+  console.log('artikel post')
+});
 
-// module.exports = router
+module.exports = router
