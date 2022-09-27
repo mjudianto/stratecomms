@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 class HomePage extends Component {
   constructor(props) {
@@ -10,6 +9,7 @@ class HomePage extends Component {
       username: '',
     };
   }
+  
   handleInputChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -24,8 +24,6 @@ class HomePage extends Component {
     const user = {
       username
     };
-
-    // console.log(user)
 
     axios.post('../../post', user)
       .then(() => console.log('User Created'))
@@ -42,7 +40,7 @@ class HomePage extends Component {
     return (
       <React.Fragment>
         <h1 style={{margin: "10px"}}>HomePage</h1>
-        <form action="../../post" method="post" className="form" onSubmit={this.handleSubmit}>
+        <form method="post" className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="" style={labelStyle}>Username : </label>
           <input type="text" name="username" className='m-3' onChange={this.handleInputChange}/>
           <button type="submit" className='btn btn-primary'>Submit</button>

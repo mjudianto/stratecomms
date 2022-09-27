@@ -5,7 +5,7 @@ var router = require('express').Router();
 // });
 
 router.post('/post',function(req,res, next){
-  console.log('artikel post')
+  console.log('artikel post');
 });
 
 module.exports = router
