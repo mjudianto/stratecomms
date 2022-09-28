@@ -9,7 +9,7 @@ class HomePage extends Component {
       username: '',
     };
   }
-  
+    
   handleInputChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -26,7 +26,7 @@ class HomePage extends Component {
     };
 
     axios.post('../../post', user)
-      .then(() => console.log('User Created'))
+      .then(() => console.log('post succeed'))
       .catch(err => {
         console.error(err);
       });
@@ -35,19 +35,20 @@ class HomePage extends Component {
   render() { 
     const labelStyle = {
       margin: '10px',
-    }
+    };
 
     return (
       <React.Fragment>
+        <button><a href="/artikel">to artikel</a></button>
         <h1 style={{margin: "10px"}}>HomePage</h1>
         <form method="post" className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="" style={labelStyle}>Username : </label>
           <input type="text" name="username" className='m-3' onChange={this.handleInputChange}/>
-          <button type="submit" className='btn btn-primary'>Submit</button>
+          <button type="submit" className='btn btn-primary'></button> 
         </form>
       </React.Fragment>
     );
   }
 }
- 
+
 export default HomePage;
