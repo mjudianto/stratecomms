@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
 import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
+import Pendaftaran from './components/pages/Pendaftaran';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -26,7 +27,7 @@ root.render(
               <a className="nav-link" href="/artikel">Artikel</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <a className="nav-link" href="/pendaftaran">Pendaftaran</a>
             </li>
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -45,6 +46,7 @@ root.render(
     <Routes>
       <Route exact path='/' element={<HomePage/>}/> 
       <Route path='/artikel' element={<Artikel/>}/> 
+      <Route path='/pendaftaran' element={<Pendaftaran/>}/>
     </Routes>
   </Router>  
 );

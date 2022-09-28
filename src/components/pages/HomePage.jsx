@@ -45,8 +45,7 @@ class HomePage extends Component {
         <form method="post" className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="" style={labelStyle}>Username : </label>
           <input type="text" name="username" className='m-3' onChange={this.handleInputChange}/>
-          <button type="submit" className='btn btn-primary' formAction='/Artikel'>Submit</button> 
-          {/* <link to='/Artikel' className='btn btn-primary' onClick={this.handleSubmit}>Submit</link> */}
+          <button type="submit" className='btn btn-primary'>Submit</button> 
         </form>
       </React.Fragment>
     );
