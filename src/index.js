@@ -7,36 +7,34 @@ import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styles from './components/static/css/index.module.css'
+import logo from './components/static/images/logo.png';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+root.render( 
   <Router>
-    <nav className="navbar navbar-expand-lg bg-dark">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">Navbar</a>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
+    <nav className={`navbar navbar-expand-lg bg-dark ${styles.navbarStyle}`}>
+      <div className="container-fluid"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">
+            <img src={logo} alt="Logo" width="200px" height="30px"/>
+          </a>
+        </div>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">Home</a>
+              <a className="nav-link active" aria-current="page" href="/" >Home</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/artikel">Artikel</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Pricing</a>
+              <a className="nav-link" href="#">Jadwal Sertifikasi</a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul className="dropdown-menu">
-                <li><a className="dropdown-item" href="#">Action</a></li>
-                <li><a className="dropdown-item" href="#">Another action</a></li>
-                <li><a className="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Portofolio</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#">Pendaftaran</a>
             </li>
           </ul>
         </div>

@@ -46,7 +46,7 @@ class HomePage extends Component {
           <label htmlFor="" style={labelStyle}>Username : </label>
           <input type="text" name="username" className='m-3' onChange={this.handleInputChange}/>
           <button type="submit" className='btn btn-primary'>Submit</button> 
-        </form>
+        </form> 
       </React.Fragment>
     );
   }

@@ -1,3 +1,12 @@
-.navbarStyle{
-  color: white;
+a {
+  color:  white !important;
+}
+
+li a {
+  width: 150px;
+  text-align: center;
+}
+
+.navbarStyle {
+  height: 80px;
 }
