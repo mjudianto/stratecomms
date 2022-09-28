@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import 'bootstrap/dist/css/bootstrap.css'
+import styles from '../static/css/index.module.css' 
 
 class Pendaftaran extends Component {
   state = {  } 
@@ -7,11 +9,12 @@ class Pendaftaran extends Component {
   render() { 
     return (
       <React.Fragment>
-        <h1>Pendaftaran Page</h1> 
-        <form method='post' onSubmit={this.handleSubmit}>
-          <input type="text" className='m-3'/>
-          <button className='btn btn-success'>Submit</button>
-        </form>
+        <div className={`container-fluid ${styles.borderline}`}>
+            <div class="mb-3 row text-center">
+                <h1>Pendaftaran</h1>
+                
+            </div>
+        </div>
       </React.Fragment>
     );
   }
