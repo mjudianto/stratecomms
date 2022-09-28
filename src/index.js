@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
 import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
+import Pendaftaran from './components/pages/Pendaftaran';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styles from './components/static/css/index.module.css'
 import logo from './components/static/images/logo.png';
@@ -43,6 +44,7 @@ root.render(
     <Routes>
       <Route exact path='/' element={<HomePage/>}/> 
       <Route path='/artikel' element={<Artikel/>}/> 
+      <Route path='/pendaftaran' element={<Pendaftaran/>}/>
     </Routes>
   </Router>  
 );

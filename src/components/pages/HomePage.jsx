@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import styles from '../static/css/homepage.module.css';
 
 class HomePage extends Component {
   constructor(props) {
@@ -41,12 +42,29 @@ class HomePage extends Component {
 
     return (
       <React.Fragment>
-        <h1 style={{margin: "10px"}}>HomePage</h1>
+        {/* <h1 style={{margin: "10px"}}>HomePage</h1>
         <form method="post" className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="" style={labelStyle}>Username : </label>
           <input type="text" name="username" className='m-3' onChange={this.handleInputChange}/>
           <button type="submit" className='btn btn-primary'>Submit</button> 
-        </form> 
+        </form> */}
+        <div class="container" className={styles.bghome}>
+          <div class="col">
+            <div class="col text-center" className={styles.ads}>
+              Ads
+            </div>
+            <div class="col-6">
+              <h1>Selamat datang di Stratecomms</h1>
+              <p>Stratecomms adalah Lembaga Pelatihan Keahlian yang membimbing calon peserta uji kompetisi PR (Public Relations)
+                untuk melaksanakan sertifikasi profesi PR dari Badan Nasional Sertifikasi Profesi
+              </p>
+              <button>Pendaftaran</button>
+            </div>
+            <div class="col text-center">
+              Ads
+            </div>
+          </div>
+        </div>
       </React.Fragment>
     );
   }
