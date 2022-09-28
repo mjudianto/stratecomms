@@ -26,7 +26,9 @@ class HomePage extends Component {
     };
 
     axios.post('../../post', user)
-      .then(() => console.log('post succeed'))
+      .then(() => console.log('User Created')
+      , window.location.href = "/artikel",
+      )
       .catch(err => {
         console.error(err);
       });
@@ -44,7 +46,8 @@ class HomePage extends Component {
         <form method="post" className="form" onSubmit={this.handleSubmit}>
           <label htmlFor="" style={labelStyle}>Username : </label>
           <input type="text" name="username" className='m-3' onChange={this.handleInputChange}/>
-          <button type="submit" className='btn btn-primary'></button> 
+          <button type="submit" className='btn btn-primary' formAction='/Artikel'>Submit</button> 
+          {/* <link to='/Artikel' className='btn btn-primary' onClick={this.handleSubmit}>Submit</link> */}
         </form>
       </React.Fragment>
     );
