@@ -1,0 +1,13 @@
+.bghome{
+    height: 100%;
+    background-image: url('../images/homepagebg.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* --bs-bg-opacity: .10; */
+  }
+
+.ads{
+  background-color: grey;
+}
