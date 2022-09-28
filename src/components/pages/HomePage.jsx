@@ -9,7 +9,7 @@ class HomePage extends Component {
       username: '',
     };
   }
-  
+    
   handleInputChange = e => {
     this.setState({
       [e.target.name]: e.target.value,
@@ -37,7 +37,7 @@ class HomePage extends Component {
   render() { 
     const labelStyle = {
       margin: '10px',
-    }
+    };
 
     return (
       <React.Fragment>
@@ -51,5 +51,5 @@ class HomePage extends Component {
     );
   }
 }
- 
+
 export default HomePage;
