@@ -6,12 +6,12 @@ import 'bootstrap/dist/css/bootstrap.css'
 import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
+import styles from './components/static/css/index.module.css'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Router>
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">Navbar</a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
