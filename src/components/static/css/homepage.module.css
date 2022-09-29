@@ -1,14 +1,81 @@
-.bghome{
-    height: 100%;
-    background-image: url('../images/homepagebg.jpg');
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* --bs-bg-opacity: .10; */
-    opacity: 0.5;
-  }
-
-.ads{
-  background-color: grey;
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.container{
+  font-family: 'Poppins';
 }
+
+.bghome{
+  position: relative; 
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+.bghome::before {    
+  content: "";
+  background-image: url('../images/homepagebg.jpg');
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.6;
+  -webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 1)), to(rgba(255, 255, 255, 0)));
+  mask-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  /* filter: drop-shadow(30px 30px 30px rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
+}
+
+h1{
+  font-size: 45px;
+  text-align: center;
+  color: black;
+  position: relative; 
+}
+
+h4{
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 44px;
+}
+
+p{
+  text-align: center;
+  color: black;
+  position: relative; 
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+.pendaftaran{
+  background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  border-color: #fff;
+  padding: 5px 15px;
+  margin-top: 5%;
+  margin-bottom: 12%;
+}
+
+.jarak{
+  padding-top: 12%;
+  padding-bottom: 3%;
+  position: relative; 
+}
+
+.enter{
+  padding-top: 3%;
+  padding-bottom: 1%;
+  position: relative; 
+}
+
+
+
+
