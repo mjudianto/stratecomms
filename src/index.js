@@ -35,7 +35,7 @@ root.render(
               <a className="nav-link" href="#">Portofolio</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Pendaftaran</a>
+              <a className="nav-link" href="/Pendaftaran">Pendaftaran</a>
             </li>
           </ul>
         </div>

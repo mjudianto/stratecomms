@@ -1,0 +1,13 @@
+.body{
+    border: 1px solid;
+    border-radius: 1cm;
+    margin-top: 50px;
+    padding-top: 20px;
+    height:500px;
+    width:800px;
+}
+
+.column{
+    margin-left: 50px;
+    margin-right: 25px;
+}
