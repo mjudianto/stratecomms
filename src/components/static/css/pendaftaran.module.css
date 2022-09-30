@@ -3,11 +3,16 @@
     border-radius: 1cm;
     margin-top: 50px;
     padding-top: 20px;
-    height:500px;
-    width:800px;
+    height:525px;
+    width:720px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.column{
-    margin-left: 50px;
-    margin-right: 25px;
+.column{ 
+    padding-left: 100px;
+}
+
+.variabel{
+    width:35%;
 }

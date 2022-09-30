@@ -10,7 +10,9 @@ class Artikel extends Component {
     // console.log(user)
 
     axios.post('../artikel/post')
-      .then(() => console.log('post success'))
+      .then(() => console.log('post success')
+      , window.location.href = "/artikel",
+      )
       .catch(err => {
         console.error(err);
       });
