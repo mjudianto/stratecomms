@@ -4,8 +4,14 @@ a {
   color:  white !important;
 }
 
+li {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  /* height: 2.2vw;
+  line-height: 2.2vw; */
+}
+
 li a {
-  width: 12vw;
   text-align: center;
 }
 
@@ -14,8 +20,19 @@ li a {
 }
 
 .aFontStyle {
-  font-weight: 400;
+  font-weight: 500;
 }
+
+.buttonPendaftaran {
+  background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
+  background-color: red;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  height: 5.5vh;
+  display: inline-flex;
+  align-items: center; 
+  border-radius: 25px;
+} 
 
 .navbarActive {
   background: -webkit-linear-gradient(right, rgba(195, 50, 40, 0.9),rgba(27, 120, 191, 0.9));
@@ -25,7 +42,7 @@ li a {
 
 .footerBody {
   background-color: black;
-  height: 26vw;
+  height: auto;
   text-align: center;
 }
 
@@ -56,6 +73,7 @@ li a {
   background-color: transparent;
   color: white;
   margin-top: 1.7vw;
+  margin-bottom: 2.7vw;
   border-radius: 7px;
   width: 13vw;
   height: 3.5vw;

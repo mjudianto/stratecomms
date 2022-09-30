@@ -40,7 +40,7 @@ function activeArtikel(){
 
 function activeJadwalSertifikasi (){
   let jadwalSertifikasi = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle}`} href="#">Jadwal Sertifikasi</a></li>;
+    <a className={`nav-link ${styles.aFontStyle}`} style={{width: '10vw'}} href="#">Jadwal Sertifikasi</a></li>;
 
   if (window.location.href == 'http://localhost:3000/jadwalsertifikasi'){
     jadwalSertifikasi = <li className="nav-item">
@@ -71,18 +71,18 @@ root.render(
       <div className="container-fluid"> 
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img src={logo} alt="Logo" width="200px" height="30px"/>
+            <img src={logo} alt="Logo" width="270px" height="35px"/>
           </a>
         </div>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className={`navbar-nav`}>
             {activeHome()}
             {activeArtikel()}
             {activeJadwalSertifikasi()}
             {activePortofolio()}
-            <li className="nav-item">
+            <button className={`btn ${styles.buttonPendaftaran}`}>
               <a className={`nav-link ${styles.aFontStyle}`} href="/Pendaftaran">Pendaftaran</a>
-            </li>
+            </button>
           </ul>
         </div>
       </div>
