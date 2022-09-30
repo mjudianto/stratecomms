@@ -94,9 +94,9 @@ root.render(
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
-      <h4><BsInstagram /> &nbsp; Instagram</h4>
-      <h4><BsWhatsapp /> &nbsp; 081390601398 (Adi)</h4>
-      <h4><MdOutlineEmail /> &nbsp; stratecomms@gmail.com</h4>
+      <h4 className={`${styles.footerh4}`}><BsInstagram /> &nbsp; Instagram</h4>
+      <h4 className={`${styles.footerh4}`}><BsWhatsapp /> &nbsp; 081390601398 (Adi)</h4>
+      <h4 className={`${styles.footerh4}`}><MdOutlineEmail /> &nbsp; stratecomms@gmail.com</h4>
       <button className={`${styles.footerButton}`}>HUBUNGI KAMI</button>
     </footer>
   </Router>  
