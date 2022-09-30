@@ -44,7 +44,7 @@ function activeJadwalSertifikasi (){
 
   if (window.location.href == 'http://localhost:3000/jadwalsertifikasi'){
     jadwalSertifikasi = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} href="#">Jadwal Sertifikasi</a></li>;
+    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} style={{width: '10vw'}} href="#">Jadwal Sertifikasi</a></li>;
     return jadwalSertifikasi;
   } else {
     return jadwalSertifikasi;

@@ -5,8 +5,8 @@ a {
 }
 
 li {
-  margin-left: 1vw;
-  margin-right: 1vw;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
   /* height: 2.2vw;
   line-height: 2.2vw; */
 }
@@ -25,7 +25,6 @@ li a {
 
 .buttonPendaftaran {
   background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
-  background-color: red;
   margin-left: 1vw;
   margin-right: 1vw;
   height: 5.5vh;
@@ -34,16 +33,29 @@ li a {
   border-radius: 25px;
 } 
 
+/* .buttonPendaftaran:hover{
+  background-image: none;
+  background-color: white !important;
+} */
+
 .navbarActive {
   background: -webkit-linear-gradient(right, rgba(195, 50, 40, 0.9),rgba(27, 120, 191, 0.9));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+li:hover {
+  background: -webkit-linear-gradient(right, rgba(195, 50, 40, 0.9),rgba(27, 120, 191, 0.9));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
 .footerBody {
   background-color: black;
   height: auto;
   text-align: center;
+  margin-top: 3vw;
 }
 
 .footerh1{
