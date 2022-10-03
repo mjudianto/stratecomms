@@ -14,7 +14,7 @@ li a {
 }
 
 .navbarStyle {
-  height: 80px;
+  height: 68px;
 }
 
 .aFontStyle {
@@ -28,7 +28,8 @@ li a {
   height: 5.5vh;
   display: inline-flex;
   align-items: center; 
-  border-radius: 25px;
+  border-radius: 30px;
+  border-color: #fff;
 } 
 
 .navbarActive {
