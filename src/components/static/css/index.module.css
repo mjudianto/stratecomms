@@ -25,7 +25,7 @@ li a {
 
 .footerBody {
   background-color: black;
-  height: 26vw;
+  height: auto;
   text-align: center;
 }
 
