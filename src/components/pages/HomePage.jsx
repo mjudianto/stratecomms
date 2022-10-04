@@ -93,7 +93,7 @@ class HomePage extends Component {
                 <p><img src={images['./logo.png']} className={styles.imgTxtLogo}/> adalah Lembaga Pelatihan Keahlian yang membimbing calon peserta uji kompetisi PR (Public Relations)
                   untuk melaksanakan sertifikasi profesi PR dari Badan Nasional Sertifikasi Profesi.
                 </p>
-                <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none', fontSize: '12pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a></button></center>
+                <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none'}} href="/Pendaftaran">PENDAFTARAN</a></button></center>
             </div>
           </div>
         </div>
@@ -133,7 +133,7 @@ class HomePage extends Component {
             autoPlaySpeed={2000}
             keyBoardControl={true}
             customTransition="all .2"
-            transitionDuration={500}
+            // transitionDuration={500}
             containerClass="carousel-container"
             removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}
             deviceType={this.props.deviceType}
