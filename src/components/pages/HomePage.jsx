@@ -58,15 +58,15 @@ class HomePage extends Component {
       superLargeDesktop: {
         // the naming can be any, depends on you.
         breakpoint: { max: 4000, min: 3000 },
-        items: 5
+        items: 1
       },
       desktop: {
         breakpoint: { max: 3000, min: 1024 },
-        items: 3
+        items: 2
       },
       tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 2
+        items: 1
       },
       mobile: {
         breakpoint: { max: 464, min: 0 },
@@ -89,11 +89,11 @@ class HomePage extends Component {
         <div className={styles.bghome}> 
           <div class="container">
             <div class="row" className={styles.jarak}>
-                <h4>Selamat datang di <img src={images['/logo.png']} className={styles.imgLogo}/></h4>
+                <h4>Selamat datang di <img src={images['./logo.png']} className={styles.imgLogo} /></h4>
                 <p><img src={images['./logo.png']} className={styles.imgTxtLogo}/> adalah Lembaga Pelatihan Keahlian yang membimbing calon peserta uji kompetisi PR (Public Relations)
                   untuk melaksanakan sertifikasi profesi PR dari Badan Nasional Sertifikasi Profesi.
                 </p>
-                <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none', fontSize: '10pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a></button></center>
+                <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none', fontSize: '12pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a></button></center>
             </div>
           </div>
         </div>
