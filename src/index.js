@@ -29,7 +29,7 @@ root.render(
             {jsFunction.activeHome()}
             {jsFunction.activeArtikel()}
             {jsFunction.activeJadwalSertifikasi()}
-            {jsFunction.  activePortofolio()}
+            {jsFunction.activePortofolio()}
             <button className={`btn ${styles.buttonPendaftaran}`}>
               <a className={`nav-link ${styles.aFontStyle}`} style={{fontSize: '10pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a>
             </button>
@@ -41,7 +41,7 @@ root.render(
       <Route exact path='/' element={<HomePage/>}/> 
       <Route path='/artikel' element={<Artikel/>}/> 
       <Route path='/pendaftaran' element={<Pendaftaran/>}/>
-      <Route path='/jadwal' element={<Jadwal />} />
+      <Route path='/jadwal' element={<Jadwal/>} />
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
