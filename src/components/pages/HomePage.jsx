@@ -89,11 +89,11 @@ class HomePage extends Component {
         <div className={styles.bghome}> 
           <div class="container">
             <div class="row" className={styles.jarak}>
-                <h4>Selamat datang di <img src={images['./logo.png']} className={styles.imgLogo}/>!</h4>
+                <h4>Selamat datang di <img src={images['/logo.png']} className={styles.imgLogo}/></h4>
                 <p><img src={images['./logo.png']} className={styles.imgTxtLogo}/> adalah Lembaga Pelatihan Keahlian yang membimbing calon peserta uji kompetisi PR (Public Relations)
                   untuk melaksanakan sertifikasi profesi PR dari Badan Nasional Sertifikasi Profesi.
                 </p>
-                <center><button className={styles.pendaftaran}>PENDAFTARAN</button></center>
+                <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none', fontSize: '10pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a></button></center>
             </div>
           </div>
         </div>
