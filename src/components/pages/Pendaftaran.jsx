@@ -30,44 +30,44 @@ class Pendaftaran extends Component {
                   <h1>Pendaftaran</h1>
               </div>
               <form class="form-horizontal" method='post' onSubmit={this.handleSubmit}>
-                  <div class="row mb-3">
+                  <div className={`row mb-3 ${styles.centerRow}`}>
                       <label className={`control-label col-sm-2 ${styles.variabel}`}>Nama Lengkap</label>
                           <div className={`col-7 ${styles.column}`}>
                               <input className={`form-control ${styles.size}`}  type="Nama Lengkap" />
                           </div>
                   </div>
-                  <div class="row mb-3">
+                  <div className={`row mb-3 ${styles.centerRow}`}>
                       <label className={`control-label col-sm-2 ${styles.variabel}`}>Nomor Telepon (Whatsapp) </label>
                       <div className={`col-7 ${styles.column}`}>
                               <input className={`form-control ${styles.size}`} type="Nomor telepon" />
                           </div>
                   </div>
-                  <div class="row mb-3">
-                      <label className={`control-label col-sm-2 ${styles.variabel}`}>Scan Pas Foto (3x4) </label>
+                  <div className={`row mb-3 ${styles.centerRow}`}>
+                      <label className={`control-label col-sm-2 ${styles.variabel}`}>Pas Foto (3x4) </label>
                       <div className={`col-7 ${styles.column}`}>
                               <input className={`form-control ${styles.size}`}  type="file"/>
                           </div>
                   </div>
-                  <div class="row mb-3">
+                  <div className={`row mb-3 ${styles.centerRow}`}>
                       <label className={`control-label col-sm-2 ${styles.variabel}`}>Curicculum Vitae (CV) </label>
                       <div className={`col-7 ${styles.column}`}>
                               <input className={`form-control ${styles.size}`}  type="file" />
                           </div>
                   </div>
-                  <div class="row mb-3">
-                      <label className={`control-label col-sm-2 ${styles.variabel}`}>Scan Ijazah </label>
+                  <div className={`row mb-3 ${styles.centerRow}`}>
+                      <label className={`control-label col-sm-2 ${styles.variabel}`}>Ijazah Terakhir </label>
                       <div className={`col-7 ${styles.column}`}>
                               <input className={`form-control ${styles.size}`}  type="file"/>
                           </div>
                   </div>
-                  <div class="row mb-3">
-                      <label className={`control-label col-sm-2 ${styles.variabel}`}>Scan Kartu Tanda Penduduk (KTP) </label>
+                  <div className={`row mb-3 ${styles.centerRow}`}>
+                      <label className={`control-label col-sm-2 ${styles.variabel}`}>Kartu Tanda Penduduk (KTP) </label>
                       <div className={`col-7 ${styles.column}`}>
                               <input className={`form-control ${styles.size}`}  type="file"/>
                           </div>
                   </div>
                   <div class="m-3 text-center">
-                    <button className={`btn btn-success ${styles.variabel}`}>Submit</button>
+                  <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none', fontSize: '10pt'}} href="/Pendaftaran"><b>SUBMIT</b></a></button></center>
                   </div>
               </form>
           </div>
