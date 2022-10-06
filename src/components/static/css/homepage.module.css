@@ -86,7 +86,8 @@ p{
   margin-bottom: 0.4%;
   width: 20%;
   height: 30%;
-  min-width: 230px;
+  min-width: 240px;
+  min-height: 30px;
 }
 
 .imgTxtLogo{
