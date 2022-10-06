@@ -93,7 +93,7 @@ class HomePage extends Component {
                 <p><img src={images['./logo.png']} className={styles.imgTxtLogo}/> adalah Lembaga Pelatihan Keahlian yang membimbing calon peserta uji kompetisi PR (Public Relations)
                   untuk melaksanakan sertifikasi profesi PR dari Badan Nasional Sertifikasi Profesi.
                 </p>
-                <center><button className={`btn ${styles.pendaftaran}`}><a style={{textDecoration: 'none'}} href="/Pendaftaran">PENDAFTARAN</a></button></center>
+                <center><a type="button" className={`btn btn-primary ${styles.pendaftaran}`} style={{textDecoration: 'none'}} href="/Pendaftaran">PENDAFTARAN</a></center>
             </div>
           </div>
         </div>
@@ -109,7 +109,7 @@ class HomePage extends Component {
 
             
             <h4 className={styles.enter} >Pimpinan <img src={images['./logo.png']} className={styles.imgLogo}/></h4>
-            <img src={imagesJPG['./pimpinan.jpg']} style={{marginTop:'2%'}} class="rounded mx-auto d-block" width="700vw" height="400vh"/>
+            <img src={imagesJPG['./pimpinan.jpg']} style={{marginTop:'2%'}} class="rounded mx-auto d-block" width="70%" height="40%"/>
             <p style={{marginBottom:'2%'}}>Dr. Muhammad Adi Pribadi S.E.,M.IB.,M.Com.,C.PR</p>
             <p>
               Dr. Muhammad Adi Pribadi adalah pimpinan <img src={images['./logo.png']} className={styles.imgTxtLogo}/> yang berperan sebagai pembimbing teknis persiapan sertifikasi profesi kepada calon peserta uji kompetensi. Beliau adalah asesor aktif di LSP PRI
@@ -125,7 +125,7 @@ class HomePage extends Component {
             <Carousel
             swipeable={false}
             draggable={false}
-            showDots={true}
+            showDots={false}
             responsive={responsive}
             ssr={true} // means to render carousel on server-side.
             infinite={true}
