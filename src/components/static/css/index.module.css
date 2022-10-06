@@ -7,6 +7,7 @@ a {
 li {
   margin-left: 1.5vw;
   margin-right: 1.5vw;
+  list-style: none;
 }
 
 li a {
@@ -14,7 +15,7 @@ li a {
 }
 
 .navbarStyle {
-  height: 68px;
+  height: 9vh;
 }
 
 .aFontStyle {
@@ -22,15 +23,18 @@ li a {
 }
 
 .buttonPendaftaran {
-  background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
+  background-image: linear-gradient(to right, rgba(195, 50, 40, 1), rgba(59, 23, 65, 1),rgba(21, 24, 87, 1),rgba(27, 120, 191, 1));
   margin-left: 1vw;
   margin-right: 1vw;
   height: 5.5vh;
   display: inline-flex;
   align-items: center; 
   border-radius: 30px;
-  border-color: #fff;
 } 
+
+.buttonPendaftaran:hover{
+  background-image: linear-gradient(to right, rgba(148, 37, 29, 0.7), rgba(59, 23, 65, 0.7),rgba(21, 24, 87, 0.7),rgba(27, 120, 191, 0.7));
+}
 
 .navbarActive {
   background: -webkit-linear-gradient(right, rgba(195, 50, 40, 0.9),rgba(27, 120, 191, 0.9));

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
+import 'jquery/dist/jquery.js'
+import 'bootstrap/dist/js/bootstrap.js'
 import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
 import Pendaftaran from './components/pages/Pendaftaran';
@@ -18,23 +20,23 @@ import Jadwal from './components/pages/Jadwal';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
   <Router>
-    <nav className={`navbar navbar-expand-lg bg-dark ${styles.navbarStyle}`}>
-      <div className="container-fluid"> 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img src={logo} alt="Logo" width="150px" height="20px"/>
-          </a>
-        </div>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className={`navbar-nav`}>
-            {jsFunction.activeHome()}
-            {jsFunction.activeArtikel()}
-            {jsFunction.activeJadwalSertifikasi()}
-            {jsFunction.activePortofolio()}
-            <button className={`btn ${styles.buttonPendaftaran}`}>
-              <a className={`nav-link ${styles.aFontStyle}`} style={{fontSize: '10pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a>
-            </button>
-          </ul>
+    <nav class={`navbar navbar-expand-lg navbar-dark bg-dark ${styles.navbarStyle}`}>
+      <div class="container-fluid">
+        <a style={{marginLeft: '2vw'}} class="navbar-brand" href="/">
+          <img src={logo} alt="Logo" width="160px" height="20px"/>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0"></ul>
+          {jsFunction.activeHome()}
+          {jsFunction.activeArtikel()}
+          {jsFunction.activeJadwalSertifikasi()}
+          {jsFunction.activePortofolio()}
+          <button className={`btn ${styles.buttonPendaftaran}`}>
+            <a className={`nav-link ${styles.aFontStyle}`} style={{fontSize: '10pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a>
+          </button>
         </div>
       </div>
     </nav>
@@ -48,7 +50,7 @@ root.render(
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
       <h4 className={`${styles.footerh4}`}><BsInstagram /> &nbsp; @stratecomms</h4>
-      <h4 className={`${styles.footerh4}`}><BsWhatsapp /> &nbsp; 081390601398 (Adi)</h4>
+      <h4 className={`${styles.footerh4}`}><BsWhatsapp /> &nbsp; 081390601398 (Dr. Muhammad Adi)</h4>
       <h4 className={`${styles.footerh4}`}><MdOutlineEmail /> &nbsp; stratecomms@gmail.com</h4>
       <button className={`${styles.footerButton}`}>HUBUNGI KAMI</button>
     </footer>
