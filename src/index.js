@@ -14,6 +14,9 @@ import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { MdOutlineEmail } from 'react-icons/md';
 import * as jsFunction from './components/static/js/index.js';
 import Jadwal from './components/pages/Jadwal';
+import AdminLogin from './components/pages/AdminLogin';
+import AdminHome from './components/pages/AdminHome';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
@@ -24,6 +27,11 @@ root.render(
           <a class="navbar-brand" href="/">
             <img src={logo} alt="Logo" width="150px" height="20px"/>
           </a>
+        </div>
+        <div class="container-fluid">
+        <button className={`btn ${styles.buttonPendaftaran}`}>
+              <a className={`nav-link ${styles.aFontStyle}`} style={{fontSize: '10pt'}} href="/AdminLogin"><b>Admin</b></a>
+            </button>
         </div>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className={`navbar-nav`}>
@@ -44,6 +52,8 @@ root.render(
       <Route path='/pendaftaran' element={<Pendaftaran/>}/>
       <Route path='/jadwal' element={<Jadwal/>}/>
       <Route path='/pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
+      <Route path='/adminHome' element={<AdminHome/>}/>
+      <Route path='/adminLogin' element={<AdminLogin/>}/>
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>

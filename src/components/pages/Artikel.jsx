@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios';
+import styles from '../static/css/artikel.module.css'
 
 class Artikel extends Component {
   state = {  } 
@@ -21,11 +22,7 @@ class Artikel extends Component {
   render() { 
     return (
       <React.Fragment>
-        <h1>Artikel Page</h1> 
-        <form method='post' onSubmit={this.handleSubmit}>
-          <input type="text" className='m-3'/>
-          <button className='btn btn-success'>Submit</button>
-        </form>
+        <h1 className={`${styles.artikelText}`}>Artikel</h1> 
       </React.Fragment>
     );
   }

@@ -1,0 +1,10 @@
+.artikelText{
+    font-weight: bold;
+    text-align: left;
+    margin-left: 140px;
+    margin-top: 60px;
+    margin-right: 100px;
+    padding-bottom: 10px;
+    font-size: 14pt;
+    border-bottom: 1px solid;
+}
