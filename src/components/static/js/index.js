@@ -39,11 +39,11 @@ export function activeJadwalSertifikasi (){
 
 export function activePortofolio (){
   let portofolio = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle}`} href="#">Portofolio</a></li>;
+    <a className={`nav-link ${styles.aFontStyle}`} href="/portofolio">Portofolio</a></li>;
 
   if (window.location.href === 'http://localhost:3000/portofolio'){
     portofolio = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} href="#">Portofolio</a></li>;
+    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} href="/portofolio">Portofolio</a></li>;
     return portofolio;
   }
     return portofolio;
