@@ -34,7 +34,11 @@ export function activeJadwalSertifikasi (){
 
   if (window.location.href === 'http://localhost:3000/jadwal'){
     jadwalSertifikasi = <li className="nav-item">
+<<<<<<< HEAD
+    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} style={{width: '10vw', lineheight: '50px'}} href="/jadwal">Jadwal Sertifikasi</a></li>;
+=======
     <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} style={{width: '10vw', minWidth: '147px'}} href="/jadwal">Jadwal Sertifikasi</a></li>;
+>>>>>>> 61eab889811f07f5ad8f9ad0b65bea3ec0a6c307
     return jadwalSertifikasi;
   }
     return jadwalSertifikasi;
