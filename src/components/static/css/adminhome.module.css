@@ -22,47 +22,24 @@
     /* filter: drop-shadow(30px 30px 30px rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); */
   }
 
-.body{
-    border-radius: 20px;
-    margin-top: 50px;
-    padding-top: 20px;
-    height:525px;
-    width:720px;
-    font-weight:400;
+  .body{
+    font-weight:bold;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    background-color: white;
+    margin-left: 28%;
 }
+  .loginColumn{
+    width: 40vw;
+    background-color: black;
+    padding-top: 2%;
+  }
 
-.pendaftaran{
-  background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
-  text-align: center;
-  color: #fff;
-  border-radius: 30px;
-  border-color: #fff;
-  font-weight: 700;
-  padding: 5px 15px;
-  margin-top: 5%;
-  margin-bottom: 12%;
-  height: 6vh;
-  width: 12vw;
-}
+  .fillColumn{
+    width:40vw;
+    border-radius : 1px;
+    padding-top: 2%;
+  }
 
-.column{ 
-    padding-left: 30px;
-}
-
-.variabel{
-    width:35%;
-    font-weight: 600;
-}
-
-.size{
-  height: 90%;
-  width:100%;
-  border: 1px solid ;
-}
-
-h1{
-  margin-right: 35%;
-}
+  h1{
+    text-align: center;
+  }
