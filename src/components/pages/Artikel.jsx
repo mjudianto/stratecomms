@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import axios from 'axios';
-<<<<<<< HEAD
-import styles from '../static/css/artikel.module.css'
-=======
 import 'bootstrap/dist/css/bootstrap.css';
 import styles from '../static/css/artikel.module.css';
 
@@ -11,7 +8,6 @@ function importAll(r) {
   r.keys().map(item => { images[item.replace('../static/images')] = r(item); });
   return images;
 }
->>>>>>> 08891b72c0235a7f05650affc2635e5c026f4c7a
 
 class Artikel extends Component {
   state = {  } 
@@ -37,9 +33,10 @@ class Artikel extends Component {
   const imagesJPG = importAll(require.context('../static/images', false, /\.jpg$/));
     return (
       <React.Fragment>
-<<<<<<< HEAD
-        <h1 className={`${styles.artikelText}`}>Artikel</h1> 
-=======
+        <form action="">
+          <input type="text" name='testing' />
+          <button type='submit' ></button>
+        </form>
         <div className={styles.jarak}>
           <div class="container">
             <h6 class="fw-bold">Artikel</h6>
@@ -90,7 +87,6 @@ class Artikel extends Component {
           <input type="text" className='m-3'/>
           <button className='btn btn-success'>Submit</button>
         </form> */}
->>>>>>> 08891b72c0235a7f05650affc2635e5c026f4c7a
       </React.Fragment>
     );
   }

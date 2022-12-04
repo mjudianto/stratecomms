@@ -26,6 +26,8 @@ class Portofolio extends Component {
           <input type="text" className='m-3'/>
           <button className='btn btn-success'>Submit</button>
         </form>
+
+        <h1>hello</h1>
       </React.Fragment>
     );
   }

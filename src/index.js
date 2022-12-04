@@ -18,39 +18,53 @@ import * as jsFunction from './components/static/js/index.js';
 import Jadwal from './components/pages/Jadwal';
 import AdminLogin from './components/pages/AdminLogin';
 import AdminHome from './components/pages/AdminHome';
+import Navbar from './components/pages/Navbar';
+import NavbarAdmin from './components/pages/NavbarAdmin';
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render( 
   <Router>
-    <nav className={`navbar navbar-expand-lg bg-dark ${styles.navbarStyle}`}>
-      <div className="container-fluid"> 
-        <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img src={logo} alt="Logo" width="150px" height="20px"/>
-          </a>
-        </div>
-        <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className={`navbar-nav`}>
-            {jsFunction.activeHome()}
-            {jsFunction.activeArtikel()}
-            {jsFunction.activeJadwalSertifikasi()}
-            {jsFunction.activePortofolio()}
-            <button className={`btn ${styles.buttonPendaftaran}`}>
-              <a className={`nav-link ${styles.aFontStyle}`} style={{fontSize: '10pt'}} href="/Pendaftaran"><b>PENDAFTARAN</b></a>
-            </button>
-          </ul>
-        </div>
-      </div>
-    </nav>
+    {/* <Routes path='/'element={<Navbar/>}>
+      <Route path='home' element={<HomePage/>}/> 
+      <Route path='artikel' element={<Artikel/>}/> 
+      <Route path='pendaftaran' element={<Pendaftaran/>}/>
+      <Route path='jadwal' element={<Jadwal/>}/>
+      <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
+      <Route path='adminHome' element={<AdminHome/>}/>
+      <Route path='adminLogin' element={<AdminLogin/>}/>
+    </Routes> */}
+    {/* <Navbar/> */}
     <Routes>
-      <Route exact path='/' element={<HomePage/>}/> 
-      <Route path='/artikel' element={<Artikel/>}/> 
-      <Route path='/pendaftaran' element={<Pendaftaran/>}/>
-      <Route path='/jadwal' element={<Jadwal/>}/>
-      <Route path='/pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
-      <Route path='/adminHome' element={<AdminHome/>}/>
-      <Route path='/adminLogin' element={<AdminLogin/>}/>
+          {/* <Route path='/' element={<Navbar/>}>
+            <Route path='home' element={<HomePage/>}/> 
+            <Route path='artikel' element={<Artikel/>}/> 
+            <Route path='pendaftaran' element={<Pendaftaran/>}/>
+            <Route path='jadwal' element={<Jadwal/>}/>
+            <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
+            <Route path='adminHome' element={<AdminHome/>}/>
+            <Route path='adminLogin' element={<AdminLogin/>}/>
+          </Route> */}
+          <Route path='/' element={<Navbar/>}>
+            <Route path='home' element={<HomePage/>}/> 
+            <Route path='artikel' element={<Artikel/>}/> 
+            <Route path='pendaftaran' element={<Pendaftaran/>}/>
+            <Route path='jadwal' element={<Jadwal/>}/>
+            <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
+          </Route>
+          <Route path='admin' element={<NavbarAdmin/>}>
+            <Route path='adminHome' element={<AdminHome/>}/>
+            <Route path='adminLogin' element={<AdminLogin/>}/>
+          </Route>
+
+          {/* <Route path='home' element={<HomePage/>}/> 
+          <Route path='artikel' element={<Artikel/>}/> 
+          <Route path='pendaftaran' element={<Pendaftaran/>}/>
+          <Route path='jadwal' element={<Jadwal/>}/>
+          <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
+          <Route path='adminHome' element={<AdminHome/>}/>
+          <Route path='adminLogin' element={<AdminLogin/>}/> */}
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
