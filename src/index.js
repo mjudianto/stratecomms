@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.css'
+import 'jquery/dist/jquery.js'
+import 'bootstrap/dist/js/bootstrap.js'
 import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
 import Pendaftaran from './components/pages/Pendaftaran';
@@ -27,11 +29,6 @@ root.render(
           <a class="navbar-brand" href="/">
             <img src={logo} alt="Logo" width="150px" height="20px"/>
           </a>
-        </div>
-        <div class="container-fluid">
-        <button className={`btn ${styles.buttonPendaftaran}`}>
-              <a className={`nav-link ${styles.aFontStyle}`} style={{fontSize: '10pt'}} href="/AdminLogin"><b>Admin</b></a>
-            </button>
         </div>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className={`navbar-nav`}>
@@ -58,7 +55,7 @@ root.render(
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
       <h4 className={`${styles.footerh4}`}><BsInstagram /> &nbsp; @stratecomms</h4>
-      <h4 className={`${styles.footerh4}`}><BsWhatsapp /> &nbsp; 081390601398 (Adi)</h4>
+      <h4 className={`${styles.footerh4}`}><BsWhatsapp /> &nbsp; 081390601398 (Dr. Muhammad Adi)</h4>
       <h4 className={`${styles.footerh4}`}><MdOutlineEmail /> &nbsp; stratecomms@gmail.com</h4>
       <button className={`${styles.footerButton}`}>HUBUNGI KAMI</button>
     </footer>
