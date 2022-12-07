@@ -56,7 +56,7 @@ class IsiArtikel extends Component {
                 <div className={styles.isi}>
                     <h2 class="fw-bold">REFLEKSI STRATECOMMS TAHUN 2021: KEMENTERIAN PEDULI SERTIFIKASI PROFESI DARI BNSP</h2>
                     <div className={styles.garishr}>31/12/2021, 13:53 WIB</div>
-                    <img src= {images['./artikel.png']} width="100%" height="40%"/>
+                    <img src= {images['./artikel.png']} width="50%" height="1%"/>
                     <br></br>
                     <p>Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat.
                          Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja, 
