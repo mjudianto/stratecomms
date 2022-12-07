@@ -35,19 +35,6 @@ class IsiArtikel extends Component {
 
     return (
       <React.Fragment>
-        <style type="text/css">
-        {`
-    .btn-flat {
-      background-color: black;
-      color: white;
-    }
-
-    .btn-xxl {
-      padding: 1rem 1.5rem;
-      font-size: 1.5rem;
-    }
-    `}
-      </style>
         <div className={styles.jarak}>
           <div class="container">
             <h6 class="fw-bold">Artikel</h6>
