@@ -78,10 +78,6 @@ class Portofolio extends Component {
         </div>
 
 
-        {/* <form method='post' onSubmit={this.handleSubmit}>
-          <input type="text" className='m-3'/>
-          <button className='btn btn-success'>Submit</button>
-        </form> */}
       </React.Fragment>
     );
   }

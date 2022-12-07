@@ -9,7 +9,6 @@
   margin-top: 20px;
   font-size: 32px;
   font-weight: bold;
-  border-bottom: 1px solid;
 }
 
 .isi{
@@ -31,15 +30,17 @@
   border-radius: 30px;
   color: #fff;
   background-color: black;
+  width: 30%;
+  min-width: 200px;
 }
 
 .flyer {
-  width: 508px; 
-  height: 720px;
+  width: 100%; 
+  height: auto;
 }
 
-hr {
-  border-bottom: 1px solid;
+.jrk{
+  padding-right: 50px;
 }
 
 .daftar{
@@ -48,6 +49,6 @@ hr {
   color: #fff;
   border: 2px solid white;
   border-radius: 25px;
-  padding: 7px 15px;
-  width: 350px;
+  width: 50%;
+  min-width: 250px;
 }

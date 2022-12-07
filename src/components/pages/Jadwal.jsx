@@ -3,6 +3,9 @@ import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import flyer from '../static/images/jadwal.png';
 import styles from '../static/css/jadwal.module.css';
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"></link>;
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>;
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>;
 
 class Jadwal extends Component {
     constructor(props) {
@@ -40,21 +43,22 @@ class Jadwal extends Component {
     render() { 
         return (
           <React.Fragment>
-        <div className='container'>
-            <div className='row'>
+        <div class='container'>
+            <div class='row'>
                 <b className={styles.judulbesar}>Jadwal Sertifikasi</b>
                 
             </div>
-            <div className='row'>
-                <div className='col-3'>
+            <div class='row'>
+                <div class='col-3'>
                 <button className={styles.event}><b style={{fontSize: '15px', padding: '7px'}}> Upcoming Event </b></button>
                 </div>
             </div>
-            <div className='row'>
-                <div className='col-5'>
-                    <img className='flyer' src={flyer} alt={flyer} />
+            <div class='row'>
+                <div class='col-sm-5'>
+                    <img className={styles.flyer} src={flyer} alt={flyer} />
                 </div>
-                <div className='col-7'>
+                <div class='col-sm-7' >
+                <div className={styles.jrk}>
                     <div className={styles.isi}>
                     <div className='row' style={{marginBottom: '20px'}}>
                         <b className={styles.juduljadwal} >Sertifikasi Profesi Public Relations</b></div>
@@ -78,10 +82,10 @@ class Jadwal extends Component {
                     </div>
                     <button className={styles.daftar} ><a style={{textDecoration: 'none', fontSize: '20pt'}} href="/Pendaftaran"><b>Daftar</b></a></button>
                     </div>
+                    </div>
                 </div>
             </div>
-            <br></br>
-            <br></br>
+
         </div>
         </React.Fragment>
     );
