@@ -16,13 +16,12 @@ import { BsInstagram, BsWhatsapp } from 'react-icons/bs';
 import { MdOutlineEmail } from 'react-icons/md';
 import * as jsFunction from './components/static/js/index.js';
 import Jadwal from './components/pages/Jadwal';
-import IsiArtikel from './components/pages/IsiArtikel';
 import AdminLogin from './components/pages/AdminLogin';
 import AdminHome from './components/pages/AdminHome';
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render( 
+const root = ReactDOM.createRoot(document.getElementById('rootadmin'));
+root.render(
   <Router>
     <nav className={`navbar navbar-expand-lg bg-dark ${styles.navbarStyle}`}>
       <div className="container-fluid"> 
@@ -43,14 +42,12 @@ root.render(
           </ul>
         </div>
       </div>
+      <h1> HALOOOOOOO</h1>
+
     </nav>
     <Routes>
-      <Route exact path='/' element={<HomePage/>}/> 
-      <Route path='/artikel' element={<Artikel/>}/> 
-      <Route path='/pendaftaran' element={<Pendaftaran/>}/>
-      <Route path='/jadwal' element={<Jadwal/>}/>
-      <Route path='/pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
-      <Route path='/isiartikel' element={<IsiArtikel/>}/>
+      <Route path='/adminHome' element={<AdminHome/>}/>
+      <Route path='/adminLogin' element={<AdminLogin/>}/>
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
