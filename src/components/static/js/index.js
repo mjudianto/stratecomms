@@ -1,4 +1,3 @@
-import { MdArrowRightAlt } from 'react-icons/md';
 import styles from '../css/index.module.css'
 import { Link } from "react-router-dom"
 
@@ -30,11 +29,15 @@ export function activeArtikel(){
 
 export function activeJadwalSertifikasi (){
   let jadwalSertifikasi = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle}`} style={{width: '10vw', minWidth: '147px'}} href="/jadwal">Jadwal Sertifikasi</a></li>;
+    <a className={`nav-link ${styles.aFontStyle}`} style={{width: '10vw'}} href="/jadwal">Jadwal Sertifikasi</a></li>;
 
-  if (window.location.href === 'http://localhost:3000/jadwal'){
+  if (window.location.href === 'http://localhost:3000/jadwalsertifikasi'){
     jadwalSertifikasi = <li className="nav-item">
+<<<<<<< HEAD
     <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} style={{width: '10vw', minWidth: '147px'}} href="/jadwal">Jadwal Sertifikasi</a></li>;
+=======
+    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} style={{width: '10vw'}} href="/jadwal">Jadwal Sertifikasi</a></li>;
+>>>>>>> d91cff3e665b7d22c4ea81c6a9dab96097d8ab05
     return jadwalSertifikasi;
   }
     return jadwalSertifikasi;
@@ -42,11 +45,11 @@ export function activeJadwalSertifikasi (){
 
 export function activePortofolio (){
   let portofolio = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle}`} href="/portofolio">Portofolio</a></li>;
+    <a className={`nav-link ${styles.aFontStyle}`} href="#">Portofolio</a></li>;
 
   if (window.location.href === 'http://localhost:3000/portofolio'){
     portofolio = <li className="nav-item">
-    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} href="/portofolio">Portofolio</a></li>;
+    <a className={`nav-link ${styles.aFontStyle} ${styles.navbarActive}`} href="#">Portofolio</a></li>;
     return portofolio;
   }
     return portofolio;
