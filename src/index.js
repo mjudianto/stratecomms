@@ -8,6 +8,8 @@ import 'bootstrap/dist/js/bootstrap.js'
 import HomePage from './components/pages/HomePage';
 import Artikel from './components/pages/Artikel';
 import Pendaftaran from './components/pages/Pendaftaran';
+import Portofolio from './components/pages/Portofolio';
+import IsiPortofolio from './components/pages/IsiPortofolio';
 import PendaftaranBerhasil from './components/pages/PendaftaranBerhasil';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import styles from './components/static/css/index.module.css'
@@ -45,7 +47,9 @@ root.render(
       <Route path='/artikel' element={<Artikel/>}/> 
       <Route path='/pendaftaran' element={<Pendaftaran/>}/>
       <Route path='/jadwal' element={<Jadwal/>}/>
+      <Route path='/portofolio' element={<Portofolio/>}/>
       <Route path='/pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
+      <Route path='/isiPortofolio' element={<IsiPortofolio/>}/>
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>
