@@ -1,0 +1,33 @@
+.jarak{
+    margin-top: 2%;
+}
+
+img{
+    width: 20%;
+    height: 85%;
+}
+
+input, textarea{
+    width: 100%;
+}
+
+.jarakform{
+    margin-top: 1%;
+}
+
+.pendaftaran{
+    background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    border-color: #fff;
+    font-weight: 700;
+    padding: 5px 15px;
+    margin-top: 5%;
+    margin-bottom: 12%;
+    height: 10%;
+    width: 15%;
+    text-decoration: none;
+    font-size: 12pt;
+    min-width: 150px;
+  }

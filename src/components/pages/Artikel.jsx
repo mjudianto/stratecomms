@@ -33,6 +33,13 @@ class Artikel extends Component {
   const imagesJPG = importAll(require.context('../static/images', false, /\.jpg$/));
     return (
       <React.Fragment>
+<<<<<<< HEAD
+=======
+        <form action="">
+          <input type="text" name='testing' />
+          <button type='submit' ></button>
+        </form>
+>>>>>>> 900c4545a1f70e15e3a158839f3490102e12ecf9
         <div className={styles.jarak}>
           <div class="container">
             <h6 class="fw-bold">Artikel</h6>
@@ -43,7 +50,11 @@ class Artikel extends Component {
                 </div>
                 <div class="col-8 text-start">
                   <h3 class="fw-bold">REFLEKSI STRATECOMMS TAHUN 2021: KEMENTERIAN PEDULI SERTIFIKASI PROFESI DARI BNSP</h3>
+<<<<<<< HEAD
                   Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat. Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja .... <a href='/IsiArtikel'><u>read more</u></a>
+=======
+                  Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat. Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja .... <a type="button" href="#"><u>read more</u></a>
+>>>>>>> 900c4545a1f70e15e3a158839f3490102e12ecf9
                   <div className={styles.garishr}>31/12/2021, 13:53 WIB</div>
                 </div>
               </div>
@@ -56,7 +67,7 @@ class Artikel extends Component {
                 </div>
                 <div class="col-8 text-start">
                   <h3 class="fw-bold">REFLEKSI STRATECOMMS TAHUN 2021: KEMENTERIAN PEDULI SERTIFIKASI PROFESI DARI BNSP</h3>
-                  Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat. Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja .... <u>read more</u>
+                  Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat. Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja .... <a type="button" href="#"><u>read more</u></a>
                   <div className={styles.garishr}>31/12/2021, 13:53 WIB</div>
                 </div>
               </div>
@@ -69,7 +80,7 @@ class Artikel extends Component {
                 </div>
                 <div class="col-8 text-start">
                   <h3 class="fw-bold">REFLEKSI STRATECOMMS TAHUN 2021: KEMENTERIAN PEDULI SERTIFIKASI PROFESI DARI BNSP</h3>
-                  Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat. Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja .... <u>read more</u>
+                  Perkembangan sertifikasi profesi Public Relations (PR) dari Badan Nasional Sertifikasi Profesi (BNSP) sudah disadari oleh banyak kalangan masyarakat. Hal ini terlihat dari para peserta dengan berlatar belakang pekerjaan yang beragam. Namun mereka tidak hanya mengetahui dan mencari sertifikasi profesinya saja .... <a type="button" href="#"><u>read more</u></a>
                   <div className={styles.garishr}>31/12/2021, 13:53 WIB</div>
                 </div>
               </div>
