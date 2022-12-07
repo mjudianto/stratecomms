@@ -50,7 +50,7 @@ class IsiPortofolio extends Component {
       </style>
         <div className={styles.jarak}>
           <div class="container">
-            <h6 class="fw-bold">Artikel</h6>
+            <h6 class="fw-bold">Portofolio</h6>
             <div className={styles.jarakjudul}>
               <div class="row">
                 <div className={styles.isi}>

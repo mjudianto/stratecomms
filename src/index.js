@@ -40,45 +40,20 @@ root.render(
     </Routes> */}
     {/* <Navbar/> */}
     <Routes>
-
-      <Route exact path='/' element={<HomePage/>}/> 
-      <Route path='/artikel' element={<Artikel/>}/> 
-      <Route path='/pendaftaran' element={<Pendaftaran/>}/>
-      <Route path='/jadwal' element={<Jadwal/>}/>
-      <Route path='/portofolio' element={<Portofolio/>}/>
-      <Route path='/pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
-      <Route path='/isiPortofolio' element={<IsiPortofolio/>}/>
-      <Route path='/isiArtikel' element={<IsiArtikel/>}/>
-          {/* <Route path='/' element={<Navbar/>}>
-            <Route path='home' element={<HomePage/>}/> 
-            <Route path='artikel' element={<Artikel/>}/> 
-            <Route path='pendaftaran' element={<Pendaftaran/>}/>
-            <Route path='jadwal' element={<Jadwal/>}/>
-            <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
-            <Route path='adminHome' element={<AdminHome/>}/>
-            <Route path='adminLogin' element={<AdminLogin/>}/>
-          </Route> */}
           <Route path='/' element={<Navbar/>}>
             <Route path='home' element={<HomePage/>}/> 
             <Route path='artikel' element={<Artikel/>}/> 
+            <Route path='Portofolio' element={<Portofolio/>}/>
             <Route path='pendaftaran' element={<Pendaftaran/>}/>
             <Route path='jadwal' element={<Jadwal/>}/>
             <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
             <Route path='isiPortofolio' element={<IsiPortofolio/>}/>
             <Route path='isiArtikel' element={<IsiArtikel/>}/>
           </Route>
-          <Route path='admin' element={<NavbarAdmin/>}>
+          <Route path='/admin' element={<NavbarAdmin/>}>
             <Route path='adminHome' element={<AdminHome/>}/>
             <Route path='adminLogin' element={<AdminLogin/>}/>
           </Route>
-
-          {/* <Route path='home' element={<HomePage/>}/> 
-          <Route path='artikel' element={<Artikel/>}/> 
-          <Route path='pendaftaran' element={<Pendaftaran/>}/>
-          <Route path='jadwal' element={<Jadwal/>}/>
-          <Route path='pendaftaranBerhasil' element={<PendaftaranBerhasil/>}/>
-          <Route path='adminHome' element={<AdminHome/>}/>
-          <Route path='adminLogin' element={<AdminLogin/>}/> */}
     </Routes>
     <footer className={`${styles.footerBody}`}>
       <h1 className={`${styles.footerh1}`}>Kami Dekat Dengan Anda</h1>

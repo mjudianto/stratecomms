@@ -33,10 +33,6 @@ class Artikel extends Component {
   const imagesJPG = importAll(require.context('../static/images', false, /\.jpg$/));
     return (
       <React.Fragment>
-        <form action="">
-          <input type="text" name='testing' />
-          <button type='submit' ></button>
-        </form>
         <div className={styles.jarak}>
           <div class="container">
             <h6 class="fw-bold">Artikel</h6>

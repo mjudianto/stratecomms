@@ -2,32 +2,63 @@
     margin-top: 2%;
 }
 
-img{
-    width: 20%;
-    height: 85%;
-}
-
-input, textarea{
-    width: 100%;
-}
-
-.jarakform{
+.jarakjudul{
     margin-top: 1%;
 }
 
-.pendaftaran{
-    background-image: linear-gradient(to right, rgba(195, 50, 40, 0.9), rgba(59, 23, 65, 0.9),rgba(21, 24, 87, 0.9),rgba(27, 120, 191, 0.9));
-    text-align: center;
-    color: #fff;
-    border-radius: 30px;
-    border-color: #fff;
-    font-weight: 700;
-    padding: 5px 15px;
-    margin-top: 5%;
-    margin-bottom: 12%;
-    height: 10%;
-    width: 15%;
-    text-decoration: none;
-    font-size: 12pt;
-    min-width: 150px;
+h6{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 1%;
+    padding-bottom: 10px;
+    font-size: 14pt;
+    border-bottom: 1px solid;
+}
+
+u{
+    color: blue;
+}
+
+.garishr{
+    font-weight: bold;
+    text-align: right;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 3%;
+    margin-top: 2%;
+    padding-bottom: 10px;
+    font-size: 14pt;
+    border-bottom: 1px solid;
+}
+
+p{
+    text-align: justify;
+    color: black;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 0;
+    margin: 0;
+    margin-top: 2%;
   }
+
+.isi{
+    margin-bottom: 5%;
+    border-bottom: 1px solid;
+}
+
+.column{ 
+    padding-left: 30px;
+}
+
+.variabel{
+    width:35%;
+    font-weight: 600;
+}
+
+.size{
+  height: 90%;
+  width:100%;
+  border: 1px solid ;
+}
+
